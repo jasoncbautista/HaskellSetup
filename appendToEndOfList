@@ -1,0 +1,1 @@
+appendToEndOfList list a = list ++ [a]
