@@ -1,3 +1,5 @@
+-- ghci hello.hs
+-- will let you access all the variables defined bellow: 
 string1 = "hello"
 string2 =  "world"
 
