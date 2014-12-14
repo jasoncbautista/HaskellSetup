@@ -24,3 +24,18 @@ faa x y = x + y
 length' :: [a] -> Int
 length' []  = 0
 length' (_:xs) = (length' xs) + 1
+
+
+head' :: [a] -> a
+head' (x:_) = x
+
+
+
+
+sum1 :: Num a => [a] -> a
+sum1 [] = 0
+sum1 (x:xs) = x + sum(xs)
+
+
+
+
