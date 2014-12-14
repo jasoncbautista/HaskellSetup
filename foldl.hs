@@ -29,3 +29,10 @@ ll1 = zipWith (+) [1..10] [1..10]
 ll2  = map (\ x -> 2 * x) [1..5]
 
 ll3 = zipWith3 (\ x y z  -> x + y + z) [1..10] [1..10] [1..10]
+
+
+-- (.) composition 
+
+
+ stringLength =  length . show
+
