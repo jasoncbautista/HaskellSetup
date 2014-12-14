@@ -39,6 +39,15 @@ notNull xs = not (null xs)
 cleanedList = filter notNull ["", "abc", "", "hello", ""]
 
 
+isEven n = (mod n 2) == 0
+
+removeOdd =  filter isEven 
+removeOdd =  filter isEven 
+
+
+
+
+
 
 
 
