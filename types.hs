@@ -11,5 +11,11 @@ str = "hello"
 
 
 
+foo :: Int -> Int
+foo x = 2* x + 1
 
+
+
+faa :: Int -> Int -> Int
+faa x y = x + y
 
