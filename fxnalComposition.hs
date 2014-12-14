@@ -3,3 +3,8 @@ stringLength' x = length (show x)
 
 
 notNull = not . null
+
+
+
+
+-- f $ x = f x
