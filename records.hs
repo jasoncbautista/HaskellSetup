@@ -16,3 +16,8 @@ alice = MakeCustomer
 
 
 
+
+whosName = name alice
+
+
+sally = alice {name = "Sally", luckyNumber = 84}
