@@ -18,6 +18,8 @@ getCustomerId :: Customer -> CustomerId
 getCustomerId (Customer cust_id name luckyNumber) = 
     cust_id
 
+getCustomerId2 :: Customer -> CustomerId
+getCustomerId2 (Customer cust_id _ _) =  cust_id
 
 
 -- Extrac tthe customer id as Int
@@ -27,5 +29,33 @@ customerToInt  (MakeCustomerId i) = i
 
 
 _id = getCustomerId alice 
-
 _int_id  = customerToInt _id
+
+
+data RGB = RGB Double Double Double
+
+-- Simple Tree
+data StringTree = StringTree  String  [StringTree] 
+
+
+hierarchy = StringTree "C:" 
+    [   StringTree "Program Files" []
+    ,   StringTree  "Users" 
+        [   StringTree  "Jason" []
+        , StringTree "Mike" [] 
+        ]
+
+
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
