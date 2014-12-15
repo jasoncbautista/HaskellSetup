@@ -35,6 +35,28 @@ x1 = defaultInt 3 simpleInt
 
 
 
+data StringList = EmptyStringList | ConstringList String StringList
+
+
+lengthStringList :: StringList  -> Int
+lengthStringList EmptyStringList = 0 
+lengthStringList (ConstringList  _ xs) = 1 + lengthStringList xs
+
+
+
+lengthx :: [a] -> Int
+lengthx [] = 0
+lengthx (_ :xs) = 1 + lengthx xs
+
+
+
+
+
+
+
+
+
+
 
 
 
