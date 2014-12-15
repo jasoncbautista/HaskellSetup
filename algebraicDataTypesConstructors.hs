@@ -15,11 +15,28 @@ x = Truex
 y :: Boolxl
 y = Truex
 
-
-
-
-
 data DialogResponse = Yes | No | Help | Quit
+
+
+-- Maybe missing value 
+data MaybeInt = NoInt | JustInt Int 
+
+-- Use pattern matching to see if a value exists and extract it if it does:
+
+
+defaultInt :: Int -> MaybeInt -> Int
+defaultInt defaultValue NoInt = defaultValue
+defaultInt _ (JustInt x) = x
+
+
+
+simpleInt = JustInt 11
+x1 = defaultInt 3 simpleInt
+
+
+
+
+
 
 
 
