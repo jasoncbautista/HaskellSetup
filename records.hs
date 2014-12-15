@@ -1,3 +1,6 @@
+
+-- Recods are Usually a bad idea
+--
 newtype  CustomerId = MakeCustomerId Int
 data Customer = MakeCustomer 
     {   customerId :: CustomerId
