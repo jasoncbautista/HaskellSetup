@@ -39,7 +39,7 @@ headOfCd = getHeadOfList cd
 
 
 
--- TODO: use ^ 
+-- TODO: make longer list and get tail , head of list too
 
 
 
